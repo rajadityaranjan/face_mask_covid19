@@ -26,7 +26,7 @@ model=Sequential()
 
 model.add(Conv2D(filter=random.randint(100,200),kernel_size=random.choice(((2,2),(3,3),(4,4),(5,5),(6,6))),input_shape=data.shape[1:]))
 model.add(Activation('relu'))
-model.add(MaxPooling2D(pool_size=random.choice(((2,2),(3,3),(4,4),(5,5),(6,6))))))
+model.add(MaxPooling2D(pool_size=random.choice(((2,2),(3,3),(4,4),(5,5),(6,6)))))
 def arch(option):
     if option == 1:
         model.add(Conv2D(filters=random.randint(60,100),
