@@ -157,7 +157,7 @@ print(history.history['accuracy'][-5])
 # In[22]:
 
 
-mod =str(model.layers)
+model_architecture =str(model.layers)
 accuracy = str(history.history['accuracy'][-5])
 
 
@@ -170,12 +170,12 @@ if history.history['accuracy'][-5] >= .90:
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
 
-    s.login("rajadityaranjan@gmail.com", "MUMMYTANNU786")
+    s.login("rajadityaranjan@gmail.com", "")
 
 
     # message
     message1 = accuracy
-    message2 = mod
+    message2 = model_architecture
 
     # sending the mail 
     s.sendmail("rajadityaranjan@gmail.com", "yoyoprinceking@gmail.com", message1)
